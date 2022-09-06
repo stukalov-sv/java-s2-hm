@@ -25,8 +25,7 @@ public class Task2HM {
             Scanner iScanner = new Scanner(fr);
             while (iScanner.hasNextLine()) {
                 String[] split = iScanner.nextLine().split(" ");
-                System.out.printf("Pupil %s was rated %d", split[0], Integer.valueOf(split[1]));
-                System.out.println();
+                logger.info(String.format("Pupil %s was rated %d", split[0], Integer.valueOf(split[1])));
             }
             iScanner.close();
         } catch (Exception ex) {
